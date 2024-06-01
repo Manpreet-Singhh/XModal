@@ -31,9 +31,10 @@ function Modal() {
   };
 
   return (
-      <div className="modal">
-        <h1>User Details Modal</h1>
+    <div className="container">
+      <h1>User Details Modal</h1>
         <button onClick={clickHandler}>Open Form</button>
+      <div className="modal">
         {isOpen && (
           <div className="modal-content" onClick={closeHandler}>
             <form onSubmit={submitHandler}>
@@ -60,6 +61,7 @@ function Modal() {
             </form>
           </div>
         )}
+      </div>
       </div>
   );
 }
